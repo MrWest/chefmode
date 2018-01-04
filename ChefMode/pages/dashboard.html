@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chef Mode | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/Chefmode.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+ 
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  
+</head>
+<body class="hold-transition skin-light sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+	   <img class="dashboard-logo text-left logo-lg" src="../images/logo.png"  />
+	  
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+         
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+		  
+             <a href="#" class="dropdown-toggle headerlink" data-toggle="dropdown">
+			 <span class="header">Notifications</span>
+              <img src="../images/notice-imp.png" class="notice-image pull-right"></i>
+              
+            </a>
+            <ul class="dropdown-menu">
+              <!-- <li class="header">Notifications</li> -->
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                       Order <span class="text-info">#54546</span> Shipped <i class="fa fa-close pull-right"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                       Order <span class="text-info">#54546</span> Shipped <i class="fa fa-close pull-right"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                       Order <span class="text-info">#54546</span> Shipped <i class="fa fa-close pull-right"></i>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+              <!--<li class="footer"><a href="#">View all</a></li>-->
+            </ul>
+          </li>
+         
+          <!-- User Account: style can be found in dropdown.less -->
+           <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../images/logged-user.png" class="user-image img-circle" alt="User Image">
+              <span class="hidden-xs">Ononta Jalil</span>
+			  <i class="fa fa-angle-down pull-right"></i>
+            </a>
+            <ul class="dropdown-menu sidebar-menu text-center">
+              <!-- User image -->
+              <li class="treeview">
+                <a href="#"><i class="pull-left fa fa-retweet"></i> Change Password</a>
+              </li>
+			  <li class="treeview">
+                <a href="#"><i class="pull-left fa fa-plane"></i> Logout</a>
+              </li>
+             
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="big-background ">
+   <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+       <!-- Sidebar Time panel -->
+      <div class="user-panel text-center">
+		<h2>2:00 PM</h2>
+		<h6>SUN, NOV 5, 2017</h6>
+      </div>
+      
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+       <li class="active actived treeview">
+		
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <i class="pull-right fa fa-caret-left"></i>
+          </a>
+		
+         
+        </li>
+		
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-users"></i>
+            <span>Vendor</span>
+            
+          </a>
+          
+        </li>
+		
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-camera"></i>
+            <span>Catalog</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-money"></i>
+            <span>Invoicing</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          
+        </li>
+       <li class="treeview">
+          <a href="inventory.html">
+            <i class="fa fa-camera"></i>
+            <span>Inventory</span>
+            
+          </a>
+          
+        </li>
+		<li class="treeview">
+          <a href="#">
+            <i class="fa fa-cog"></i>
+            <span>Settings</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          
+        </li>
+		
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+	
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+	
+      <h1>
+        Your Dashboard 
+		<a class=" pull-right btn btn-flat btn-sm btn-green"><i class="fa fa-cart-arrow-down"></i>  <span>  Your Basket</span></a>		
+      </h1>
+      
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+       <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+		  <div class="bg-orange">
+          <div class="small-box bg-dark">
+		   <div class="row">
+            <div class="bg-lightgray col-xs-6">
+              <li class="text-center fa fa-users"></li>
+              
+            </div>
+			<div class="text-center col-xs-6">
+              <h5 class="uppercase">Total Vendors</h5>
+			   <h2 >125</h2>
+			   <hr class="someline"/>
+			   <a class="btn btn-flat btn-sm btn-orange">Last Month 05</a>
+              
+            </div>
+           </div> 
+          </div>
+		  </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+		  <div class="bg-orange">
+          <div class="small-box bg-dark">
+            <div class="row">
+            <div class="bg-lightgray col-xs-6">
+              <li class="text-center fa fa-money"></li>
+              
+            </div>
+			<div class="text-center col-xs-6">
+              <h5 class="uppercase">Total Invoices</h5>
+			   <h2 >125</h2>
+			    <hr class="someline"/>
+			   <a class="btn btn-flat btn-sm btn-orange">Last Month 05</a>
+              
+            </div>
+           </div>
+          </div>
+		  </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+		  <div class="bg-orange">
+          <div class="small-box bg-dark">
+            <div class="row">
+            <div class="bg-lightgray col-xs-6">
+              <li class="text-center fa fa-sitemap"></li>
+              
+            </div>
+			<div class="text-center col-xs-6">
+              <h5 class="uppercase">Total Inventory</h5>
+			   <h2 >10000</h2>
+			    <hr class="someline"/>
+			   <a class="btn btn-flat btn-sm btn-orange">Last Month 550</a>
+              
+            </div>
+           </div>
+          </div>
+		  </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+		  <div class="bg-orange">
+          <div class="small-box bg-dark">
+            <div class="row">
+            <div class="bg-lightgray col-xs-6">
+              <li class="text-center fa fa-shopping-cart"></li>
+              
+            </div>
+			<div class="text-center col-xs-6">
+              <h5 class="uppercase">Total Products</h5>
+			   <h2 >125</h2>
+			    <hr class="someline"/>
+			   <a class="btn btn-flat btn-sm btn-orange">Last Month 05</a>
+              
+            </div>
+           </div>
+          </div>
+		  </div>
+        </div>
+        <!-- ./col -->
+      </div>
+      <!-- /.row -->
+      <!-- Main row -->
+       <div class="row white-zone">
+	   <div class=" col-xs-9">
+	   <h4>Previous Order</h4>
+	   <!-- /.box-header -->
+           
+              <table class="table  table-hover table-fixed">
+                <tr>
+                  <th>Purchase Date  <i class="fa fa-angle-down pull-right"></i></th>
+                  <th class="bigone">Products  <i class="fa fa-angle-down pull-right"></i></th>
+                  <th>Price  <i class="fa fa-angle-down pull-right"></i></th>
+                  <th>Quantity  <i class="fa fa-angle-down pull-right"></i></th>
+				  <th class="fixedone"></th>
+                </tr>
+               <tr>
+                  <td>Nov. 3, 2017</td>
+                  <td>
+				  <p class="text-strong">Red Heirloom Tomatoes</p>
+				  <p>By: Fresh Vegetable Inc.</p>
+				  <p>Shipped from: FL</p>
+				  <a href="#" class="text-green">In Stock</a>
+				  </td>
+                  <td>
+                    <p class="text-orange text-strong">$. 8.69 / Pound</p>
+					<p>Todays Price</p>
+					<p>$. 8.69 / Pound</p>
+				 
+                  </td>
+                  <td class="text-center">
+				    <table class="table table-bordered table-inner">
+					<tr >
+					  <td><p>Qty: </p></td>
+					  <td> <p>200</p></td>
+					</tr>
+					 </table>
+				  </td>
+				  <td class="text-center">
+				   <a class="btn btn-green btn-sm">Buy Again</a>
+				   <p class="text-info underline minitop">View Order</p>
+				  </td>
+                </tr>
+				<tr>
+                  <td>Nov. 3, 2017</td>
+                  <td>
+				  <p class="text-strong">Red Heirloom Tomatoes</p>
+				  <p>By: Fresh Vegetable Inc.</p>
+				  <p>Shipped from: FL</p>
+				  <a href="#" class="text-green">In Stock</a>
+				  </td>
+                  <td>
+                    <p class="text-orange text-strong">$. 8.69 / Pound</p>
+					<p>Todays Price</p>
+					<p>$. 8.69 / Pound</p>
+				 
+                  </td>
+                  <td class="text-center">
+				    <table class="table table-bordered table-inner">
+					<tr >
+					  <td><p>Qty: </p></td>
+					  <td> <p>200</p></td>
+					</tr>
+					 </table>
+				  </td>
+				  <td class="text-center">
+				   <a class="btn btn-green btn-sm">Buy Again</a>
+				   <p class="text-info underline minitop">View Order</p>
+				  </td>
+                </tr>
+				<tr>
+                  <td>Nov. 3, 2017</td>
+                  <td>
+				  <p class="text-strong">Red Heirloom Tomatoes</p>
+				  <p>By: Fresh Vegetable Inc.</p>
+				  <p>Shipped from: FL</p>
+				  <a href="#" class="text-green">In Stock</a>
+				  </td>
+                  <td>
+                    <p class="text-orange text-strong">$. 8.69 / Pound</p>
+					<p>Todays Price</p>
+					<p>$. 8.69 / Pound</p>
+				 
+                  </td>
+                  <td class="text-center">
+				    <table class="table table-bordered table-inner">
+					<tr >
+					  <td><p>Qty: </p></td>
+					  <td> <p>200</p></td>
+					</tr>
+					 </table>
+				  </td>
+				  <td class="text-center">
+				   <a class="btn btn-green btn-sm">Buy Again</a>
+				   <p class="text-info underline minitop">View Order</p>
+				  </td>
+                </tr>
+				<tr>
+                  <td>Nov. 3, 2017</td>
+                  <td>
+				  <p class="text-strong">Red Heirloom Tomatoes</p>
+				  <p>By: Fresh Vegetable Inc.</p>
+				  <p>Shipped from: FL</p>
+				  <a href="#" class="text-green">In Stock</a>
+				  </td>
+                  <td>
+                    <p class="text-orange text-strong">$. 8.69 / Pound</p>
+					<p>Todays Price</p>
+					<p>$. 8.69 / Pound</p>
+				 
+                  </td>
+                  <td class="text-center">
+				    <table class="table table-bordered table-inner">
+					<tr >
+					  <td><p>Qty: </p></td>
+					  <td> <p>200</p></td>
+					</tr>
+					 </table>
+				  </td>
+				  <td class="text-center">
+				   <a class="btn btn-green btn-sm">Buy Again</a>
+				   <p class="text-info underline minitop">View Order</p>
+				  </td>
+                </tr>
+				<tr>
+                  <td>Nov. 3, 2017</td>
+                  <td>
+				  <p class="text-strong">Red Heirloom Tomatoes</p>
+				  <p>By: Fresh Vegetable Inc.</p>
+				  <p>Shipped from: FL</p>
+				  <a href="#" class="text-green">In Stock</a>
+				  </td>
+                  <td>
+                    <p class="text-orange text-strong">$. 8.69 / Pound</p>
+					<p>Todays Price</p>
+					<p>$. 8.69 / Pound</p>
+				 
+                  </td>
+                  <td class="text-center">
+				    <table class="table table-bordered table-inner">
+					<tr >
+					  <td><p>Qty: </p></td>
+					  <td> <p>200</p></td>
+					</tr>
+					 </table>
+				  </td>
+				  <td class="text-center">
+				   <a class="btn btn-green btn-sm">Buy Again</a>
+				   <p class="text-info underline minitop">View Order</p>
+				  </td>
+                </tr>
+				
+              </table>
+			  
+			  <div class="box-footer clearfix text-center">
+				  <ul class="pagination pagination-sm no-margin ">
+					<li><a href="#">&laquo;</a></li>
+					<li><a href="#">Page</a></li>
+					<li><a class="paginationlink"><input type="text" class="small-input" placeholder="3"></input></a></li>
+					<li><a href="#">of 3</a></li>
+					<li><a href="#">&raquo;</a></li>
+				  </ul>
+              </div>
+            
+	   </div>
+	   <div class=" col-xs-3">
+	   <h4>Products on Sale</h4>
+	   <table class="table  table-hover table-fixed ">
+                <tr >
+                   <td class="rowshaped">
+					  <p class="text-strong">Orang Carrots Imported by Pounds</p>
+					  <a href="#" class="text-green">In Stock</a>
+					  <p class="text-orange text-strong">$. 8.69 / Pound</p>
+					  <div class="row">
+					  <div class="col-xs-4">
+						  <table class="table table-bordered table-inner">
+								<tr >
+								  <td><p>Qty: </p></td>
+								  <td> <input type="text" class="simple-input" placeholder="200"></input></td>
+								</tr>
+						 </table>
+					 </div>
+						 <div class="col-xs-8 text-center">
+							<a class="btn btn-green btn-sm ">Add to Basket</a>
+						  </div>
+					 </div>
+					  
+				  </td> 
+                
+                </tr>
+				 <tr >
+                   <td class="rowshaped">
+					  <p class="text-strong">Orang Carrots Imported by Pounds</p>
+					  <a href="#" class="text-green">In Stock</a>
+					  <p class="text-orange text-strong">$. 8.69 / Pound</p>
+					  <div class="row">
+					  <div class="col-xs-4">
+						  <table class="table table-bordered table-inner">
+								<tr >
+								  <td><p>Qty: </p></td>
+								  <td> <input type="text" class="simple-input" placeholder="200"></input></td>
+								</tr>
+						 </table>
+					 </div>
+						 <div class="col-xs-8 text-center">
+							<a class="btn btn-green btn-sm ">Add to Basket</a>
+						  </div>
+					 </div>
+					  
+				  </td> 
+                
+                </tr>
+				 <tr >
+                   <td class="rowshaped">
+					  <p class="text-strong">Orang Carrots Imported by Pounds</p>
+					  <a href="#" class="text-green">In Stock</a>
+					  <p class="text-orange text-strong">$. 8.69 / Pound</p>
+					  <div class="row">
+					  <div class="col-xs-4">
+						  <table class="table table-bordered table-inner">
+								<tr >
+								  <td><p>Qty: </p></td>
+								  <td> <input type="text" class="simple-input" placeholder="200"></input></td>
+								</tr>
+						 </table>
+					 </div>
+						 <div class="col-xs-8 text-center">
+							<a class="btn btn-green btn-sm ">Add to Basket</a>
+						  </div>
+					 </div>
+					  
+				  </td> 
+                
+                </tr>
+				 <tr >
+                   <td class="rowshaped">
+					  <p class="text-strong">Orang Carrots Imported by Pounds</p>
+					  <p><a href="#" class="text-green">In Stock </a> <span class="badge bg-red uppercase metro side-text">Price Drop</span></p>
+					  <p class="text-orange text-strong">$. 8.69 / Pound</p>
+					  <div class="row">
+					  <div class="col-xs-4">
+						  <table class="table table-bordered table-inner">
+								<tr >
+								  <td><p>Qty: </p></td>
+								  <td> <input type="text" class="simple-input" placeholder="200"></input></td>
+								</tr>
+						 </table>
+					 </div>
+						 <div class="col-xs-8 text-center">
+							<a class="btn btn-green btn-sm ">Add to Basket</a>
+						  </div>
+					 </div>
+					  
+				  </td> 
+                
+                </tr>
+               <tr>
+		</table>
+			<div class="box-footer clearfix text-center" >
+              <ul class="pagination pagination-sm no-margin ">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a class="paginationlink"><input type="text" class="small-input" placeholder="3"></input></a></li>
+                <li><a href="#">of 3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+	   </div>
+	  </div>
+     
+      <!-- /.row (main row) -->
+	  <!--- breadcrumb -->
+	 <div>
+	  <ul class="breadcrumb">
+		  <li><a href="#"><i class="fa fa-home"></i></a></li>		  
+		  <li class="active text-sm">Dashboard</li>
+	 </ul>
+	 </div>
+    </section>
+    
+  </div>
+  </div>
+ <!-- /.content -->
+  <footer class="main-footer text-center">	  
+    
+    <span>All rights reserved - Techjar 2017</strong> 
+  </footer>
+ 
+  
+</div>
+
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="../dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+</body>
+</html>
