@@ -10,7 +10,7 @@
  */
 html,
 body {
- 
+
 }
 .layout-boxed html,
 .layout-boxed body {
@@ -21,6 +21,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
+   background: #d7d7d7 !important;
 }
 
 /* Layout */
@@ -728,7 +729,7 @@ a:focus {
   .control-sidebar-open .content-wrapper,
   .control-sidebar-open .right-side,
   .control-sidebar-open .main-footer {
-    margin-right: 230px;
+    margin-right: 180px;
   }
 }
 .fixed .control-sidebar {
@@ -5776,7 +5777,9 @@ table.text-center th {
 	border-radius: 0px 15px 0px 0px ;
 }
 .big-background {
+	
 	background:#313030;
+	height: 100% !important;
 }
 .bg-orange
 {
@@ -5893,11 +5896,12 @@ table.text-center th {
 }
 .white-zone {
   background-color: #ffffff;
-  border-color: #d7d7d7 !important;
-  border: 1px solid;
+  border: 1px solid #d7d7d7!important;
+  border-bottom: 0px !important;	
   position: relative;
   margin: 0px 0px 0px 0px;
   font-size: 13px;
+  height:100% !important;
 }
 .bigone {
 	width: 40%;
@@ -5991,7 +5995,8 @@ table.text-center th {
 	left: 0;
 	border-top: 0px solid #d2d6de;
 	margin-left: 0px !important;
-	padding-top: 0px;
+	padding-top: 10px;
+	
 }
 .content {
     min-height: 100%;    
@@ -6000,6 +6005,12 @@ table.text-center th {
 	padding-bottom: 0px;
     padding-left: 15px;
     padding-right: 15px;
+	
+}
+.status-bar {
+	
+	border-top: 1px solid #d7d7d7 !important;
+	
 }
 .table-striped td {
 	padding-bottom: 6px !important;
@@ -6178,4 +6189,7 @@ table.text-center th {
 	padding-bottom: 15px !important;
 	padding-left: 8px !important;
 	padding-right: 8px !important;
+}
+.breadcrumb {
+	margin-bottom: 0px !important;
 }
