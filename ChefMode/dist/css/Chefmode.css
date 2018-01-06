@@ -6107,6 +6107,19 @@ table.text-center th {
  .large-title {
 	 font-size: 18px !important;
  }
+ 
+ .select-div {
+	width: 100% !important;
+}
+ 
+}
+
+.select-div {
+	width: 400px;
+}
+.select-cell {
+	width: 160px;
+	
 }
 
 .tienav >li>a {
@@ -6352,3 +6365,9 @@ a>.fa-caret-left {
 	margin-left: 230px;
 }
 }
+
+
+/*.select-div {
+	max-width: 295px;
+}
+*/
