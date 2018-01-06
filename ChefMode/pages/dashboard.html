@@ -9,14 +9,17 @@
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+   <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+  
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/Chefmode.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+ 
  
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -214,8 +217,8 @@
               
             </div>
 			<div class="text-center col-xs-6">
-              <h5 class="uppercase">Total Vendors</h5>
-			   <h2 >125</h2>
+              <h6 class="uppercase">Total Vendors</h6>
+			   <h3 >125</h3>
 			   <hr class="someline"/>
 			   <a class="btn btn-flat btn-sm btn-orange useless">Last Month 05</a>
 			    <a class="btn btn-flat btn-sm btn-orange mobile"><li class="text-center fa fa-calendar mobile"></li> 05</a>
@@ -236,12 +239,12 @@
               
             </div>
 			<div class="text-center col-xs-6">
-              <h5 class="uppercase">Total Invoices</h5>
-			   <h2 >125</h2>
+              <h6 class="uppercase">Total Invoices</h6>
+			   <h3 >125</h3>
 			    <hr class="someline"/>
 			  
 			   <a class="btn btn-flat btn-sm btn-orange useless">Last Month 05</a>
-			    <a class="btn btn-flat btn-sm btn-orange mobile"><li class="text-center fa fa-calendar mobile"></li> 05</a>
+			   <a class="btn btn-flat btn-sm btn-orange mobile"><li class="text-center fa fa-calendar mobile"></li> 05</a>
               
             </div>
            </div>
@@ -259,8 +262,8 @@
               
             </div>
 			<div class="text-center col-xs-6">
-              <h5 class="uppercase">Total Inventory</h5>
-			   <h2>10000</h2>
+              <h6 class="uppercase">Total Inventory</h6>
+			   <h3>10000</h3>
 			    <hr class="someline"/>
 			   <a class="btn btn-flat btn-sm btn-orange useless">Last Month 550</a>
 			    <a class="btn btn-flat btn-sm btn-orange mobile"><li class="text-center fa fa-calendar mobile"></li> 550</a>
@@ -281,8 +284,8 @@
               
             </div>
 			<div class="text-center col-xs-6">
-              <h5 class="uppercase">Total Products</h5>
-			   <h2 >125</h2>
+              <h6 class="uppercase">Total Products</h6>
+			   <h3 >125</h3>
 			    <hr class="someline"/>
 			   <a class="btn btn-flat btn-sm btn-orange useless">Last Month 05</a>
 			    <a class="btn btn-flat btn-sm btn-orange mobile"><li class="text-center fa fa-calendar mobile"></li> 05</a>
@@ -727,6 +730,8 @@
 
 <!-- jQuery 3 -->
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -742,5 +747,17 @@
 <script src="../dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
+
+<!-- iCheck -->
+<script src="../plugins/iCheck/icheck.min.js"></script>
+<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' // optional
+    });
+  });
+</script>
 </body>
 </html>
