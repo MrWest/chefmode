@@ -91,10 +91,10 @@
             </a>
             <ul class="dropdown-menu sidebar-menu text-center">
               <!-- User image -->
-              <li class="treeview">
+              <li >
                 <a href="#"><i class="pull-left fa fa-retweet"></i> Change Password</a>
               </li>
-			  <li class="treeview">
+			  <li >
                 <a href="#"><i class="pull-left fa fa-plane"></i> Logout</a>
               </li>
              
@@ -120,7 +120,7 @@
       
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-       <li class="treeview">
+       <li >
 		
           <a href="dashboard.html">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>           
@@ -129,7 +129,7 @@
          
         </li>
 		
-        <li class="treeview">
+        <li >
           <a href="#">
             <i class="fa fa-users"></i>
             <span>Vendor</span>
@@ -149,12 +149,12 @@
 			
           </a>
 		   <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-clock-o"></i> Order History</a></li>
+            <li class="active"><a href="catalog.html"><i class="fa fa-clock-o"></i> Order History</a></li>
             
           </ul>
           
         </li>
-        <li class="treeview">
+        <li >
           <a href="#">
             <i class="fa fa-money"></i>
             <span>Invoicing</span>
@@ -165,14 +165,14 @@
           
         </li>
        <li class="active actived treeview">
-          <a href="#">
+          <a href="inventory.html">
             <i class="fa fa-camera"></i>
             <span>Inventory</span>
              <i class="pull-right fa fa-caret-left"></i>
           </a>
           
         </li>
-		<li class="treeview">
+		<li >
           <a href="#">
             <i class="fa fa-cog"></i>
             <span>Settings</span>
@@ -195,20 +195,23 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-	<div >
+	<div class="select-div">
 	 <table class="table clear-fix">
 			<tr >
-				<td class="short-padding fixed-width" >
-					<h1>Inventory</h1>
+				<td class="short-padding "  >
+					<h1>Inventory
+					 
+					</h1>
+					
 				</td>
-				<td class="short-padding fixed-width"  style="padding-left: 60px !important">
+				<td class="clear-fix  select-cell">
 					<!-- Select Restaurant -->
-		<select class="form-control select2  pull-left" multiple="" data-placeholder="Select Restaurant" style="width: 100%; margin-left: 20px !important" tabindex="-1"aria-hidden="true">
-                  <option>Light Flower</option>
-                  <option>The Tacos's</option>
-                  <option>California Flavor</option>
-                  <option>Richie's</option>                  
-         </select>
+						<select class="form-control select2 top-select " multiple="" data-placeholder="Select Restaurant"  tabindex="-1" aria-hidden="true">
+						  <option>Light Flower</option>
+						  <option>The Tacos's</option>
+						  <option>California Flavor</option>
+						  <option>Richie's</option>                  
+					</select>
 				</td>
 		</tr>
 		</table>
