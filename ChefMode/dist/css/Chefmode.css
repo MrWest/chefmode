@@ -5884,7 +5884,7 @@ table.text-center th {
 .btn-red {
    color: #fff;
   background-color: #bd1b2b;
-  border-color: #4cae4c;
+  border-color: #ac2925;
 }
 
 .sidebar-menu > li > a {
@@ -6113,7 +6113,9 @@ table.text-center th {
  .select-div {
 	width: 100% !important;
 }
- 
+ .small-padding {
+	 padding: 0px !important;
+ }
 }
 
 .select-div {
@@ -6372,7 +6374,23 @@ a>.fa-caret-left {
 
 }
 
-
+ .content-center {
+	 top: 30% !important;
+	 width: 30% !important;
+ }
+ 
+ .btn-large {
+	width: 100% !important;
+ }
+ .modal-content {
+	 padding: 15px !important;
+ }
+ .modal-body {
+	 padding: 20px 0px !important;
+ }
+ .small-padding {
+	 padding: 0px 10px;
+ }
 /*.select-div {
 	max-width: 295px;
 }
