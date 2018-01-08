@@ -220,20 +220,22 @@
               <h6 class="uppercase">Total Vendors</h6>
 			   <h3 >125</h3>
 			   <hr class="someline"/>
-			   <table class="useless">
-				<tr>
-				 <td>
-				 <a class="btn btn-flat btn-sm btn-orange useless">Last Month 05</a>
-				 </td>
-				</tr>
-				</table>
-				<table class="mobile">
-				<tr>
-				 <td>
-				  <a class="btn btn-flat btn-sm btn-orange mobile"><li class="text-center fa fa-calendar mobile"></li> 05</a>
-				 </td>
-				</tr>
-				</table>
+			   <div class="small-padding">
+				   <table class="useless btn-large">
+					<tr>
+					 <td class="btn-large">
+					 <a class="btn btn-flat btn-sm btn-orange btn-large">Last Month 05</a>
+					 </td>
+					</tr>
+					</table>
+					<table class="mobile btn-large">
+					<tr>
+					 <td class="btn-large">
+					  <a class="btn btn-flat btn-sm btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
+					 </td>
+					</tr>
+					</table>
+				</div>
             </div>
            </div> 
           </div>
@@ -254,20 +256,22 @@
 			   <h3 >125</h3>
 			    <hr class="someline"/>
 			  
-			  <table class="useless">
-				<tr>
-				 <td>
-				 <a class="btn btn-flat btn-sm btn-orange useless">Last Month 05</a>
-				 </td>
-				</tr>
-				</table>
-				<table class="mobile">
-				<tr>
-				 <td>
-				  <a class="btn btn-flat btn-sm btn-orange mobile"><li class="text-center fa fa-calendar mobile"></li> 05</a>
-				 </td>
-				</tr>
-				</table>
+			 <div class="small-padding">
+				   <table class="useless btn-large">
+					<tr>
+					 <td class="btn-large">
+					 <a class="btn btn-flat btn-sm btn-orange btn-large">Last Month 05</a>
+					 </td>
+					</tr>
+					</table>
+					<table class="mobile btn-large">
+					<tr>
+					 <td class="btn-large">
+					  <a class="btn btn-flat btn-sm btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
+					 </td>
+					</tr>
+					</table>
+				</div>
             </div>
            </div>
           </div>
@@ -287,20 +291,22 @@
               <h6 class="uppercase">Total Inventory</h6>
 			   <h3>10000</h3>
 			    <hr class="someline"/>
-				<table class="useless">
-				<tr>
-				 <td>
-				 <a class="btn btn-flat btn-sm btn-orange useless">Last Month 550</a>
-				 </td>
-				</tr>
-				</table>
-				<table class="mobile">
-				<tr>
-				 <td>
-				  <a class="btn btn-flat btn-sm btn-orange mobile"><li class="text-center fa fa-calendar mobile"></li> 550</a>
-				 </td>
-				</tr>
-				</table>
+				<div class="small-padding">
+				   <table class="useless btn-large">
+					<tr>
+					 <td class="btn-large">
+					 <a class="btn btn-flat btn-sm btn-orange btn-large">Last Month 550</a>
+					 </td>
+					</tr>
+					</table>
+					<table class="mobile btn-large">
+					<tr>
+					 <td class="btn-large">
+					  <a class="btn btn-flat btn-sm btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
+					 </td>
+					</tr>
+					</table>
+				</div>
 			   
 			   
               
@@ -323,20 +329,22 @@
               <h6 class="uppercase">Total Products</h6>
 			   <h3 >125</h3>
 			    <hr class="someline"/>
-			   <table class="useless">
-				<tr>
-				 <td>
-				 <a class="btn btn-flat btn-sm btn-orange useless">Last Month 05</a>
-				 </td>
-				</tr>
-				</table>
-				<table class="mobile">
-				<tr>
-				 <td>
-				  <a class="btn btn-flat btn-sm btn-orange mobile"><li class="text-center fa fa-calendar mobile"></li> 05</a>
-				 </td>
-				</tr>
-				</table>
+			   <div class="small-padding">
+				   <table class="useless btn-large">
+					<tr>
+					 <td class="btn-large">
+					 <a class="btn btn-flat btn-sm btn-orange btn-large">Last Month 05</a>
+					 </td>
+					</tr>
+					</table>
+					<table class="mobile btn-large">
+					<tr>
+					 <td class="btn-large">
+					  <a class="btn btn-flat btn-sm btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
+					 </td>
+					</tr>
+					</table>
+				</div>
             </div>
            </div>
           </div>
@@ -727,7 +735,11 @@
 						 </table>
 					 </div>
 						 <div class="col-xs-8 text-center">
-							<a class="btn btn-green btn-sm ">Add to Basket</a>
+						  <button type="button" class="btn btn-green btn-sm " data-toggle="modal" data-target="#modal-default">
+							Add to Basket
+						  </button>						  
+						   
+							<!--<a class="btn btn-green btn-sm ">Add to Basket</a>-->
 						  </div>
 					 </div>
 					  
@@ -756,7 +768,6 @@
 	 </ul>
 	 </div>
 	
-		
       <!-- /.row (main row) -->
 	 
     </section>
@@ -773,6 +784,35 @@
     
     <span>All rights reserved - Techjar 2017</strong> 
   </footer>
+  
+							<div class="modal fade" id="modal-default">
+							  <div class="modal-dialog content-center">
+								<div class="modal-content">
+								  <div >
+									
+									   <h5 class="text-center">Error Message!</h5>
+								  </div>
+								  <div class="modal-body">
+									<p>In publishing and graphic design, lorem ipsum is a filler text or greeking commonly used to demonstrate the textual elements of a graphic document or visual presentation. Replacing meaningful content with placeholder text allows designers to design the form of the content before the content itself has been produced.</p>
+								  </div>
+
+								  <div class="row">
+								  <div class="col-lg-6">
+									<button type="button" class="btn btn-default btn-flat btn-large" data-dismiss="modal">Cancel</button>
+								  </div>
+								  <div class="col-lg-6">
+									<button type="button" class="btn btn-flat btn-red btn-large" data-dismiss="modal">Continue</button>
+								  </div>
+									
+								  </div>
+								</div>
+								<!-- /.modal-content -->
+							  </div>
+							  <!-- /.modal-dialog -->
+							</div>
+							<!-- /.modal -->
+  
+            <!-- /.modal-content -->
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
@@ -785,12 +825,11 @@
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>
-<!-- Bootstrap 3.3.7 -->
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
 
 <!-- AdminLTE App -->
 <script src="../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+
 <script src="../dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
