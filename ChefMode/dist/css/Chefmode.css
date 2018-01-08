@@ -5923,7 +5923,7 @@ table.text-center th {
   position: relative;
   margin: 0px 0px 0px 0px;
   font-size: 13px;
-  height:100% !important;
+  min-height:474px !important;
 }
 .bigone {
 	width: 40%;
@@ -6370,7 +6370,9 @@ a>.fa-caret-left {
 }
 
  
-
+.white-zone {
+	min-height:712px !important;
+}
 
 }
 
@@ -6390,6 +6392,56 @@ a>.fa-caret-left {
  }
  .small-padding {
 	 padding: 0px 10px;
+ }
+ 
+ .btn-check {
+	 
+  display: inline-block;  
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+      cursor: pointer;
+
+ 
+	 padding: 5px  !important;
+	 border: 0px !important;
+	 background: transparent !important;
+	 color: #777;
+	  outline: 0px auto -webkit-focus-ring-color !important;
+      outline-offset: 0px !important;
+ }
+ 
+ .btn-check :hover {
+	 
+	 color: #73c6f7 !important;
+ }
+ .btn-check.active {
+	
+	 color: #4093c4 !important;
+ }
+ .btn-inverse {
+	  color: #fff !important;
+	  background: #000;
+	  padding-right: 20px !important;
+	  padding-left: 8px !important;
+ }
+ 
+  .btn-inverse:hover{
+	  
+	  background: #444 !important;
+	  
+ }
+ 
+ .fa-print {
+	 margin-right: 15px !important;
+ }
+ .rowshaped-long {
+	 padding-bottom: 30px !important;
+	 padding-top: 30px !important;
  }
 /*.select-div {
 	max-width: 295px;
