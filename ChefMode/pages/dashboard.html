@@ -17,7 +17,7 @@
   
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/Chefmode.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
+  <!-- Chefmode Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
  
  
@@ -115,8 +115,26 @@
     <section class="sidebar">
        <!-- Sidebar Time panel -->
       <div class="user-panel text-center">
-		<h2>2:00 PM</h2>
-		<h6>SUN, NOV 5, 2017</h6>
+			<table class="time-table">
+				<tr>
+				 <td>
+					<h2>2:00 PM</h2>
+					<h6>SUN, NOV 5, 2017</h6>
+				</td>
+				<tr>
+			</table>
+		
+			<table class="time-table-mini">
+				<tr>
+				 <td>
+					<h4 >
+						<i class="fa fa-clock-o text-left" style="font-size: 28px; margin-bottom: 10px"></i> 
+						<p style="font-size: 8px">2:00 PM</p>
+					   
+					 </h4>	
+				</td>
+				<tr>
+			</table>
       </div>
       
       <!-- sidebar menu: : style can be found in sidebar.less -->
@@ -132,7 +150,7 @@
         </li>
 		
         <li >
-          <a href="#">
+          <a href="vendor_list.html">
             <i class="fa fa-users"></i>
             <span>Vendor</span>
             
@@ -156,7 +174,7 @@
           </ul>
           
         </li>
-        <li >
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-money"></i>
             <span>Invoicing</span>
@@ -164,7 +182,10 @@
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
-          
+           <ul class="treeview-menu">
+            <li class="active"><a href="product_catalog_2.html"><i class="fa fa-archive"></i> Product Catalog</a></li>
+            
+          </ul>
         </li>
        <li >
           <a href="inventory.html">
@@ -224,14 +245,14 @@
 				   <table class="useless btn-large">
 					<tr>
 					 <td class="btn-large">
-					 <a class="btn btn-flat btn-sm btn-danger btn-danger btn-orange btn-large">Last Month 05</a>
+					 <a  href="vendor_list.html" class="btn btn-flat btn-sm btn-danger btn-danger btn-orange btn-large">Last Month 05</a>
 					 </td>
 					</tr>
 					</table>
 					<table class="mobile btn-large">
 					<tr>
 					 <td class="btn-large">
-					  <a class="btn btn-flat btn-sm btn-danger btn-danger btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
+					  <a  href="vendor_list.html" class="btn btn-flat btn-sm btn-danger btn-danger btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
 					 </td>
 					</tr>
 					</table>
@@ -260,14 +281,14 @@
 				   <table class="useless btn-large">
 					<tr>
 					 <td class="btn-large">
-					 <a class="btn btn-flat btn-sm btn-danger btn-danger btn-orange btn-large">Last Month 05</a>
+					 <a href="report.html" class="btn btn-flat btn-sm btn-danger btn-danger btn-orange btn-large">Last Month 05</a>
 					 </td>
 					</tr>
 					</table>
 					<table class="mobile btn-large">
 					<tr>
 					 <td class="btn-large">
-					  <a class="btn btn-flat btn-sm btn-danger btn-danger btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
+					  <a href="report.html" class="btn btn-flat btn-sm btn-danger btn-danger btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
 					 </td>
 					</tr>
 					</table>
@@ -295,14 +316,14 @@
 				   <table class="useless btn-large">
 					<tr>
 					 <td class="btn-large">
-					 <a class="btn btn-flat btn-sm btn-danger btn-danger btn-orange btn-large">Last Month 550</a>
+					 <a href="current_inventory.html" class="btn btn-flat btn-sm btn-danger btn-danger btn-orange btn-large">Last Month 550</a>
 					 </td>
 					</tr>
 					</table>
 					<table class="mobile btn-large">
 					<tr>
 					 <td class="btn-large">
-					  <a class="btn btn-flat btn-sm btn-danger btn-danger btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
+					  <a href="current_inventory.html" class="btn btn-flat btn-sm btn-danger btn-danger btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
 					 </td>
 					</tr>
 					</table>
@@ -333,14 +354,14 @@
 				   <table class="useless btn-large">
 					<tr>
 					 <td class="btn-large">
-					 <a class="btn btn-flat btn-sm btn-danger btn-danger btn-orange btn-large">Last Month 05</a>
+					 <a href="product_catalog.html" class="btn btn-flat btn-sm btn-danger btn-danger btn-orange btn-large">Last Month 05</a>
 					 </td>
 					</tr>
 					</table>
 					<table class="mobile btn-large">
 					<tr>
 					 <td class="btn-large">
-					  <a class="btn btn-flat btn-sm btn-danger btn-danger btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
+					  <a href="product_catalog.html" class="btn btn-flat btn-sm btn-danger btn-danger btn-orange text-center"><li class="text-center fa fa-calendar mobile"></li> 05</a>
 					 </td>
 					</tr>
 					</table>
@@ -373,7 +394,7 @@
 				  <p class="text-strong">Red Heirloom Tomatoes</p>
 				  <p>By: Fresh Vegetable Inc.</p>
 				  <p>Shipped from: FL</p>
-				  <a href="#" class="text-green">In Stock</a>
+				  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 				  </td>
                   <td>
                     <p class="text-orange text-strong">$. 8.69 / Pound</p>
@@ -400,7 +421,7 @@
 				  <p class="text-strong">Red Heirloom Tomatoes</p>
 				  <p>By: Fresh Vegetable Inc.</p>
 				  <p>Shipped from: FL</p>
-				  <a href="#" class="text-green">In Stock</a>
+				  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 				  </td>
                   <td>
                     <p class="text-orange text-strong">$. 8.69 / Pound</p>
@@ -427,7 +448,7 @@
 				  <p class="text-strong">Red Heirloom Tomatoes</p>
 				  <p>By: Fresh Vegetable Inc.</p>
 				  <p>Shipped from: FL</p>
-				  <a href="#" class="text-green">In Stock</a>
+				  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 				  </td>
                   <td>
                     <p class="text-orange text-strong">$. 8.69 / Pound</p>
@@ -454,7 +475,7 @@
 				  <p class="text-strong">Red Heirloom Tomatoes</p>
 				  <p>By: Fresh Vegetable Inc.</p>
 				  <p>Shipped from: FL</p>
-				  <a href="#" class="text-green">In Stock</a>
+				  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 				  </td>
                   <td>
                     <p class="text-orange text-strong">$. 8.69 / Pound</p>
@@ -481,7 +502,7 @@
 				  <p class="text-strong">Red Heirloom Tomatoes</p>
 				  <p>By: Fresh Vegetable Inc.</p>
 				  <p>Shipped from: FL</p>
-				  <a href="#" class="text-green">In Stock</a>
+				  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 				  </td>
                   <td>
                     <p class="text-orange text-strong">$. 8.69 / Pound</p>
@@ -517,7 +538,7 @@
 				  <p class="text-strong">Red Heirloom Tomatoes</p>
 				  <p>By: Fresh Vegetable Inc.</p>
 				  <p>Shipped from: FL</p>
-				  <a href="#" class="text-green">In Stock</a>
+				  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 				  </td>
                   <td>
                     <p class="text-orange text-strong">$. 8.69 / Pound</p>
@@ -542,7 +563,7 @@
 				  <p class="text-strong">Red Heirloom Tomatoes</p>
 				  <p>By: Fresh Vegetable Inc.</p>
 				  <p>Shipped from: FL</p>
-				  <a href="#" class="text-green">In Stock</a>
+				  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 				  </td>
                   <td>
                     <p class="text-orange text-strong">$. 8.69 / Pound</p>
@@ -567,7 +588,7 @@
 				  <p class="text-strong">Red Heirloom Tomatoes</p>
 				  <p>By: Fresh Vegetable Inc.</p>
 				  <p>Shipped from: FL</p>
-				  <a href="#" class="text-green">In Stock</a>
+				  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 				  </td>
                   <td>
                     <p class="text-orange text-strong">$. 8.69 / Pound</p>
@@ -592,7 +613,7 @@
 				  <p class="text-strong">Red Heirloom Tomatoes</p>
 				  <p>By: Fresh Vegetable Inc.</p>
 				  <p>Shipped from: FL</p>
-				  <a href="#" class="text-green">In Stock</a>
+				  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 				  </td>
                   <td>
                     <p class="text-orange text-strong">$. 8.69 / Pound</p>
@@ -617,7 +638,7 @@
 				  <p class="text-strong">Red Heirloom Tomatoes</p>
 				  <p>By: Fresh Vegetable Inc.</p>
 				  <p>Shipped from: FL</p>
-				  <a href="#" class="text-green">In Stock</a>
+				  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 				  </td>
                   <td>
                     <p class="text-orange text-strong">$. 8.69 / Pound</p>
@@ -657,7 +678,7 @@
                 <tr >
                    <td class="rowshaped">
 					  <p class="text-strong">Orang Carrots Imported by Pounds</p>
-					  <a href="#" class="text-green">In Stock</a>
+					  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 					  <p class="text-orange text-strong">$. 8.69 / Pound</p>
 					  <div class="row">
 					  <div class="col-xs-4">
@@ -679,7 +700,7 @@
 				 <tr >
                    <td class="rowshaped">
 					  <p class="text-strong">Orang Carrots Imported by Pounds</p>
-					  <a href="#" class="text-green">In Stock</a>
+					  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 					  <p class="text-orange text-strong">$. 8.69 / Pound</p>
 					  <div class="row">
 					  <div class="col-xs-4">
@@ -701,7 +722,7 @@
 				 <tr >
                    <td class="rowshaped">
 					  <p class="text-strong">Orang Carrots Imported by Pounds</p>
-					  <a href="#" class="text-green">In Stock</a>
+					  <a href="product_catalog_2.html" class="text-green">In Stock</a>
 					  <p class="text-orange text-strong">$. 8.69 / Pound</p>
 					  <div class="row">
 					  <div class="col-xs-4">
@@ -827,11 +848,11 @@
 </script>
 
 
-<!-- AdminLTE App -->
-<script src="../dist/js/adminlte.min.js"></script>
+<!-- Chefmode App -->
+<script src="../dist/js/Chefmode.min.js"></script>
 
 <script src="../dist/js/pages/dashboard.js"></script>
-<!-- AdminLTE for demo purposes -->
+<!-- Chefmode forpurposes -->
 <script src="../dist/js/demo.js"></script>
 
 <!-- iCheck -->

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chef Mode | Inventory</title>
+  <title>Chef Mode | Product Catalog</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -148,7 +148,7 @@
         </li>
 		
         <li >
-          <a  href="vendor_list.html">
+          <a href="vendor_list.html">
             <i class="fa fa-users"></i>
             <span>Vendor</span>
             
@@ -156,18 +156,18 @@
           
         </li>
 		
-        <li class="treeview">
+        <li class="active actived treeview">
           <a href="#">
-            <i class="glyphicon glyphicon-camera"></i>
+            <i class="fa fa-camera"></i>
             <span>Catalog</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
 			  
             </span>
-			
+			<i class="pull-right fa fa-caret-left"></i>
           </a>
 		   <ul class="treeview-menu">
-            <li class="active"><a href="catalog.html"><i class="fa fa-clock-o"></i> Order History</a></li>
+            <li class="active"><a href="catalaog.html"><i class="fa fa-clock-o"></i> Order History</a></li>
             
           </ul>
           
@@ -185,7 +185,7 @@
             
           </ul>
         </li>
-       <li class="active actived treeview">
+       <li >
           <a href="inventory.html">
             <i class="fa fa-camera"></i>
             <span>Inventory</span>
@@ -216,26 +216,26 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-	<div class="select-div">
+	<div >
 	 <table class="table clear-fix">
 			<tr >
-				<td class="short-padding "  >
-					<h1>Inventory
-					 
-					</h1>
-					
+				<td class="clear-fix " style="width: 323px !important;" >
+					<h1 >Product Catalog</h1>
 				</td>
-				<td class="clear-fix  select-cell">
+				<td class="clear-fix select-cell useless tittle-moblie"  >
 					<!-- Select Restaurant -->
-						<select class="form-control select2 top-select " multiple="" data-placeholder="Select Restaurant"  tabindex="-1" aria-hidden="true">
-						  <option>Light Flower</option>
-						  <option>The Tacos's</option>
-						  <option>California Flavor</option>
-						  <option>Richie's</option>                  
-					</select>
-				</td>
+					<select class="form-control select2 top-select" multiple="" data-placeholder="Select Category" tabindex="-1"aria-hidden="true">
+							  <option>Organic Vegetable Florida</option>
+							  <option>Organic Vegetable</option>
+											 
+					 </select>
+			</td>
+			<td class="short-padding" >
+			<a  href="your_basket.html"   class=" pull-right btn btn-flat btn-sm btn-success btn-green"><i class="fa fa-cart-arrow-down"></i>  <span>  Your Basket 180</span></a>	
+			</td>
 		</tr>
 		</table>
+		
 	</div>
 	
 	
@@ -243,7 +243,7 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="white-zone" >
+      <div class="white-zone">
 	   <div >
 
 	    <table class="table">
@@ -311,37 +311,34 @@
            
               <table class="table  table-hover table-fixed table-striped useless">
                 <tr>
-                  <th  >Product #  <i class="fa fa-angle-down pull-right"></i></th>
-				  <th>Product Name  <i class="fa fa-angle-down pull-right"></i></th>
-                  <th class="bigone-small ">Product Description  <i class="fa fa-angle-down pull-right"></i></th>
-                  <th  >Pack Size  <i class="fa fa-angle-down pull-right"></i></th>
-                  <th  >Case price  <i class="fa fa-angle-down pull-right"></i></th>
-				  <th >Price  <i class="fa fa-angle-down pull-right"></i></th>
-				  <th  >Quantity  <i class="fa fa-angle-down pull-right"></i></th>
+                 
+				  <th class="bigone">Product Name  <i class="fa fa-angle-down pull-right"></i></th>
+                  <th >Stock  <i class="fa fa-angle-down pull-right"></i></th>
+                  <th  >Category  <i class="fa fa-angle-down pull-right"></i></th>
+                  <th  >Sellers  <i class="fa fa-angle-down pull-right"></i></th>
+				  <th >Price  <i class="fa fa-angle-down pull-right"></i></th>				  
 				  <th>Qty  <i class="fa fa-angle-down pull-right"></i></th>
 				  <th class="fixedone"></th>
                 </tr>
                <tr>
-                  <td  >1</td>
+                  
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p >Red Organic Tomatoes imported by pounds</p>
 				  
 				  </td>
                   <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
+                     <a href="product_catalog_2.html" class="text-green">In Stock</a>				 
                   </td>
                   <td class="text-center ">
-				     <p >20"x20"x15"</p>		
+				     <p >Organic Vegetables</p>	
 				  </td>
-				   <td class="text-center ">
-				     <p >$. 1.90</p>		
+				   <td >
+				     <a href="#" class="text-blue underline text-left">View Sellers</a>		
 				  </td>
 				   <td class="text-center">
-				     <p >$. 1.90</p>		
+				     <p class="text-orange text-strong" >$. 8.69 / Pound</p>		
 				  </td>
-				   <td class="text-center ">
-				     <p >10</p>		
-				  </td>
+				   
 				   <td class="text-left">
 				     <input type="text" class="simple-input" placeholder="200"></input>		
 				  </td>
@@ -351,171 +348,193 @@
 				  </td>
                 </tr>
 				
-               <tr>
-                 <tr>
-                  <td  >2</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
-				  </td>
-                  <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
-                  </td>
-                  <td class="text-center  ">
-				     <p >20"x20"x15"</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >10</p>		
-				  </td>
-				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
-				  </td>
-				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm ">Add to Basket</a>
-				  
-				  </td>
-                </tr>
-                 <tr>
-                  <td  >3</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
-				  </td>
-                  <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
-                  </td>
-                  <td class="text-center ">
-				     <p >20"x20"x15"</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >10</p>		
-				  </td>
-				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
-				  </td>
-				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm ">Add to Basket</a>
-				  
-				  </td>
-                </tr>
+
                   <tr>
-                  <td  >4</td>
+                  
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p >Red Organic Tomatoes imported by pounds</p>
 				  
 				  </td>
                   <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
+                     <a href="product_catalog_2.html" class="text-green">In Stock</a>				 
                   </td>
                   <td class="text-center ">
-				     <p >20"x20"x15"</p>		
+				     <p >Organic Vegetables</p>	
 				  </td>
-				   <td class="text-center ">
-				     <p >$. 1.90</p>		
+				   <td >
+				     <a href="#" class="text-blue underline text-left">View Sellers</a>		
 				  </td>
 				   <td class="text-center">
-				     <p >$. 1.90</p>		
+				     <p class="text-orange text-strong" >$. 8.69 / Pound</p>		
 				  </td>
-				   <td class="text-center ">
-				     <p >10</p>		
-				  </td>
+				   
 				   <td class="text-left">
 				     <input type="text" class="simple-input" placeholder="200"></input>		
 				  </td>
 				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm ">Add to Basket</a>
+				   <a class="btn btn-primary btn-blue btn-sm">Add to Basket</a>
 				  
 				  </td>
                 </tr>
 				
-               <tr>
-                  <td  >5</td>
+				 <tr>
+                  
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p >Red Organic Tomatoes imported by pounds</p>
 				  
 				  </td>
                   <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
+                     <a href="#" class="text-red">Out of stock</a>				 
                   </td>
                   <td class="text-center ">
-				     <p >20"x20"x15"</p>		
+				     <p >Organic Vegetables</p>	
 				  </td>
-				   <td class="text-center ">
-				     <p >$. 1.90</p>		
-				  </td>
+				   <td >
+				     <a href="#" class="text-blue underline text-left">View Sellers</a>		
+				  </td>ws
 				   <td class="text-center">
-				     <p >$. 1.90</p>		
+				     <p class="text-orange text-strong" >$. 8.69 / Pound</p>		
 				  </td>
-				   <td class="text-center ">
-				     <p >10</p>		
-				  </td>
+				   
 				   <td class="text-left">
 				     <input type="text" class="simple-input" placeholder="200"></input>		
 				  </td>
 				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm ">Add to Basket</a>
+				   <a class="btn btn-primary btn-blue btn-sm">Add to Basket</a>
 				  
 				  </td>
                 </tr>
-				 <tr>
-                  <td  >6</td>
+               
+                  <tr>
+                  
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p >Red Organic Tomatoes imported by pounds <span class=" btn-blue uppercase btn-flat short-padding">sale</span><span class=" btn-red uppercase btn-flat short-padding">new</span></p>
 				  
 				  </td>
                   <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
+                     <a href="product_catalog_2.html" class="text-green">In Stock</a>				 
                   </td>
                   <td class="text-center ">
-				     <p >20"x20"x15"</p>		
+				     <p >Organic Vegetables</p>	
 				  </td>
-				   <td class="text-center ">
-				     <p >$. 1.90</p>		
+				   <td >
+				     <a href="#" class="text-blue underline text-left">View Sellers</a>		
 				  </td>
 				   <td class="text-center">
-				     <p >$. 1.90</p>		
+				     <p class="text-orange text-strong" >$. 8.69 / Pound</p>		
 				  </td>
-				   <td class="text-center" >
-				     <p >10</p>		
-				  </td>
+				   
 				   <td class="text-left">
 				     <input type="text" class="simple-input" placeholder="200"></input>		
 				  </td>
 				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm ">Add to Basket</a>
+				   <a class="btn btn-primary btn-blue btn-sm">Add to Basket</a>
+				  
+				  </td>
+                </tr>
+               
+                   <tr>
+                  
+                  <td>
+				  <p >Red Organic Tomatoes imported by pounds <span class=" btn-blue uppercase btn-flat short-padding">sale</span><span class=" btn-red uppercase btn-flat short-padding">new</span></p>
+				  
+				  </td>
+                  <td  >
+                     <a href="product_catalog_2.html" class="text-green">In Stock</a>				 
+                  </td>
+                  <td class="text-center ">
+				     <p >Organic Vegetables</p>	
+				  </td>
+				   <td >
+				     <a href="#" class="text-blue underline text-left">View Sellers</a>		
+				  </td>
+				   <td class="text-center">
+				     <p class="text-orange text-strong" >$. 8.69 / Pound</p>		
+				  </td>
+				   
+				   <td class="text-left">
+				     <input type="text" class="simple-input" placeholder="200"></input>		
+				  </td>
+				  <td class="text-center">
+				   <a class="btn btn-primary btn-blue btn-sm">Add to Basket</a>
+				  
+				  </td>
+                </tr>
+                <tr>
+                  
+                  <td>
+				  <p >Red Organic Tomatoes imported by pounds</p>
+				  
+				  </td>
+                  <td  >
+                     <a href="product_catalog_2.html" class="text-green">In Stock</a>				 
+                  </td>
+                  <td class="text-center ">
+				     <p >Organic Vegetables</p>	
+				  </td>
+				   <td >
+				     <a href="#" class="text-blue underline text-left">View Sellers</a>		
+				  </td>
+				   <td class="text-center">
+				     <p class="text-orange text-strong" >$. 8.69 / Pound</p>		
+				  </td>
+				   
+				   <td class="text-left">
+				     <input type="text" class="simple-input" placeholder="200"></input>		
+				  </td>
+				  <td class="text-center">
+				   <a class="btn btn-primary btn-blue btn-sm">Add to Basket</a>
+				  
+				  </td>
+                </tr>
+				
+               
+				  <tr>
+                  
+                  <td>
+				  <p >Red Organic Tomatoes imported by pounds</p>
+				  
+				  </td>
+                  <td  >
+                     <a href="product_catalog_2.html" class="text-green">In Stock</a>				 
+                  </td>
+                  <td class="text-center ">
+				     <p >Organic Vegetables</p>	
+				  </td>
+				   <td >
+				     <a href="#" class="text-blue underline text-left">View Sellers</a>		
+				  </td>
+				   <td class="text-center">
+				     <p class="text-orange text-strong" >$. 8.69 / Pound</p>		
+				  </td>
+				   
+				   <td class="text-left">
+				     <input type="text" class="simple-input" placeholder="200"></input>		
+				  </td>
+				  <td class="text-center">
+				   <a class="btn btn-primary btn-blue btn-sm">Add to Basket</a>
 				  
 				  </td>
                 </tr>
 				
               </table>
+			  
 			  <table class="table  table-hover table-fixed table-striped mobile">
                 <tr>                  
-				  <th>Product Name  <i class="fa fa-angle-down pull-right"></i></th>                  
+				  <th>Product <i class="fa fa-angle-down pull-right"></i></th>                  
 				  <th >Price  <i class="fa fa-angle-down pull-right"></i></th>				  
 				  <th>Qty  <i class="fa fa-angle-down pull-right"></i></th>
 				  <th class="gosmall"></th>
                 </tr>
                <tr>
-                  <td  >1</td>
+                  
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p >Red Organic Tomatoes imported by pounds</p>
 				  
 				  </td>
                  
 				   <td class="text-center">
-				     <p >$. 1.90</p>		
+				       <p class="text-orange text-strong" >$. 8.69 / Pound</p>		
 				  </td>
 				  
 				   <td class="text-left">
@@ -527,14 +546,14 @@
 				  </td>
                 </tr>
 				
-               <td  >2</td>
+               
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p >Red Organic Tomatoes imported by pounds</p>
 				  
 				  </td>
                  
 				   <td class="text-center">
-				     <p >$. 1.90</p>		
+				       <p class="text-orange text-strong" >$. 8.69 / Pound</p>			
 				  </td>
 				  
 				   <td class="text-left">
@@ -545,14 +564,14 @@
 				  
 				  </td>
                 </tr>
-				<td  >3</td>
+				
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p >Red Organic Tomatoes imported by pounds</p>
 				  
 				  </td>
                  
 				   <td class="text-center">
-				     <p >$. 1.90</p>		
+				       <p class="text-orange text-strong" >$. 8.69 / Pound</p>			
 				  </td>
 				  
 				   <td class="text-left">
@@ -563,14 +582,14 @@
 				  
 				  </td>
                 </tr>
-				<td  >4</td>
+				
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p >Red Organic Tomatoes imported by pounds</p>
 				  
 				  </td>
                  
 				   <td class="text-center">
-				     <p >$. 1.90</p>		
+				       <p class="text-orange text-strong" >$. 8.69 / Pound</p>			
 				  </td>
 				  
 				   <td class="text-left">
@@ -581,14 +600,14 @@
 				  
 				  </td>
                 </tr>
-				<td  >5</td>
+				
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p >Red Organic Tomatoes imported by pounds</p>
 				  
 				  </td>
                  
 				   <td class="text-center">
-				     <p >$. 1.90</p>		
+				       <p class="text-orange text-strong" >$. 8.69 / Pound</p>			
 				  </td>
 				  
 				   <td class="text-left">
@@ -599,14 +618,14 @@
 				  
 				  </td>
                 </tr>
-				<td  >6</td>
+				
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p >Red Organic Tomatoes imported by pounds</p>
 				  
 				  </td>
                  
 				   <td class="text-center">
-				     <p >$. 1.90</p>		
+				       <p class="text-orange text-strong" >$. 8.69 / Pound</p>			
 				  </td>
 				  
 				   <td class="text-left">
@@ -669,7 +688,7 @@
 	  <ul class="breadcrumb">
 		  <li><a href="#"><i class="fa fa-home"></i></a></li>		  
 		  <li class="text-sm"><a href="dashboard.html">Dashboard</a></li>
-		  <li class="active text-sm">Inventory</li>
+		  <li class="active text-sm">Product Catalog</li>
 	 </ul>
 	 </div>
     </section>

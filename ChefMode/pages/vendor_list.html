@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chef Mode | Inventory</title>
+  <title>Chef Mode | Vendor List</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -12,13 +12,21 @@
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="../dist/css/Chefmode.css">
-  <!-- Chefmode Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../plugins/iCheck/all.css">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="../bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+  <!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="../plugins/timepicker/bootstrap-timepicker.min.css">
   <!-- Select2 -->
   <link rel="stylesheet" href="../bower_components/select2/dist/css/select2.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/chefmode.css">
+ 
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,9 +35,11 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  
+  <!-- Google Font
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"> -->
 </head>
-<body class="hold-transition skin-light sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
   <header class="main-header">
@@ -148,7 +158,7 @@
         </li>
 		
         <li >
-          <a  href="vendor_list.html">
+          <a href="vendor_list.html">
             <i class="fa fa-users"></i>
             <span>Vendor</span>
             
@@ -156,15 +166,15 @@
           
         </li>
 		
-        <li class="treeview">
+        <li class="active actived treeview">
           <a href="#">
-            <i class="glyphicon glyphicon-camera"></i>
+            <i class="fa fa-camera"></i>
             <span>Catalog</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
 			  
             </span>
-			
+			<i class="pull-right fa fa-caret-left"></i>
           </a>
 		   <ul class="treeview-menu">
             <li class="active"><a href="catalog.html"><i class="fa fa-clock-o"></i> Order History</a></li>
@@ -185,7 +195,7 @@
             
           </ul>
         </li>
-       <li class="active actived treeview">
+       <li >
           <a href="inventory.html">
             <i class="fa fa-camera"></i>
             <span>Inventory</span>
@@ -216,34 +226,18 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-	<div class="select-div">
-	 <table class="table clear-fix">
-			<tr >
-				<td class="short-padding "  >
-					<h1>Inventory
-					 
-					</h1>
-					
-				</td>
-				<td class="clear-fix  select-cell">
-					<!-- Select Restaurant -->
-						<select class="form-control select2 top-select " multiple="" data-placeholder="Select Restaurant"  tabindex="-1" aria-hidden="true">
-						  <option>Light Flower</option>
-						  <option>The Tacos's</option>
-						  <option>California Flavor</option>
-						  <option>Richie's</option>                  
-					</select>
-				</td>
-		</tr>
-		</table>
-	</div>
 	
+					<h1>
+					Vendor List
+					<a  href="#"   class=" pull-right btn btn-flat btn-sm btn-inverse"><i class="fa fa-print"></i>  <span class="short-padding">  Print</span></a>	
+					</h1>
+				
 	
     </section>
 
     <!-- Main content -->
     <section class="content">
-      <div class="white-zone" >
+      <div class="white-zone">
 	   <div >
 
 	    <table class="table">
@@ -262,45 +256,14 @@
 				</td>
 				<td class="short-padding">
 				<div class="margin-topless pull-right">
-				<table class="table useless" >
-					 <tr>
-						 <td  class="short-padding fixed-width"  >
-						   <select class="form-control pull-right">
-									<option selected="selected">Price: Low to High</option>
-									<option>Name: A to Z</option>
-									<option>Pack Size: Low to High</option>
-									<option>Case Price: Low to High</option>
-								  </select>
-						 </td>
-						  <td class="short-padding fixed-width"  >
-						      <ul class="pagination pagination-sm no-margin pull-right">
-								<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-								<li><a href="#">Page</a></li>
-								<li><a class="paginationlink"><input type="text" class="small-input" placeholder="3"></input></a></li>
-								<li><a href="#">of 3</a></li>
-								<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-							  </ul>
-						 </td>
-						 <td  class="short-padding fixed-width" >
-						     <ul class="pagination pagination-sm no-margin pull-right">
-								<li>
-								<a href="#" class="clear-fix">
-								<select class="form-control short-padding-input">
-									<option>14</option>
-									<option selected="selected">16</option>
-									<option>18</option>
-									<option>20</option>
-									<option>22</option>                    
-								</select>
-								</a>
-								</li>
-								<li><a href="#" >Per Page</a></li>
-								
-							  </ul>  
-						 </td>
-					 </tr>
-				 </table>
-				</table>
+				 <div class="input-group date">
+                  <div class="input-group-btn">
+						  <button type="button" class="btn btn-flat btn-search"><i class="fa fa-calendar"></i></button>
+			      </div>
+                  <input type="text" class="form-control " id="datepicker">
+				  
+                </div>
+				</div>
 				</td>
 			</tr>
 		</table>
@@ -309,311 +272,225 @@
 			 
 	   <!-- /.box-header -->
            
-              <table class="table  table-hover table-fixed table-striped useless">
+              <table class="table  table-hover table-fixed table-striped padded-table useless">
                 <tr>
-                  <th  >Product #  <i class="fa fa-angle-down pull-right"></i></th>
-				  <th>Product Name  <i class="fa fa-angle-down pull-right"></i></th>
-                  <th class="bigone-small ">Product Description  <i class="fa fa-angle-down pull-right"></i></th>
-                  <th  >Pack Size  <i class="fa fa-angle-down pull-right"></i></th>
-                  <th  >Case price  <i class="fa fa-angle-down pull-right"></i></th>
-				  <th >Price  <i class="fa fa-angle-down pull-right"></i></th>
-				  <th  >Quantity  <i class="fa fa-angle-down pull-right"></i></th>
-				  <th>Qty  <i class="fa fa-angle-down pull-right"></i></th>
+                  <th>Order #<i class="fa fa-angle-down pull-right"></i></th>
+				  <th style="width: 40%">Vendor Name  <i class="fa fa-angle-down pull-right"></i></th>                 
+                  <th>Date of Dispatch  <i class="fa fa-angle-down pull-right"></i></th>
+				  <th>Total Products  <i class="fa fa-angle-down pull-right"></i></th>	
+                  <th>Total Amaount  <i class="fa fa-angle-down pull-right"></i></th>				  
 				  <th class="fixedone"></th>
                 </tr>
                <tr>
-                  <td  >1</td>
+                  <td>PB-134859</td>
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p>Organic Food Inc</p>
 				  
-				  </td>
-                  <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
-                  </td>
-                  <td class="text-center ">
-				     <p >20"x20"x15"</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
+				  </td>    
+					<td class="text-center ">
+				     <p >Nov 24 2017</p>		
+				  </td>				  
 				   <td class="text-center ">
 				     <p >10</p>		
 				  </td>
 				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
+				    <p class="text-orange" >$. 1900</p>		
 				  </td>
 				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm">Add to Basket</a>
-				  
-				  </td>
-                </tr>
-				
-               <tr>
-                 <tr>
-                  <td  >2</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
-				  </td>
-                  <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
-                  </td>
-                  <td class="text-center  ">
-				     <p >20"x20"x15"</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >10</p>		
-				  </td>
-				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
-				  </td>
-				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm ">Add to Basket</a>
-				  
-				  </td>
-                </tr>
-                 <tr>
-                  <td  >3</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
-				  </td>
-                  <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
-                  </td>
-                  <td class="text-center ">
-				     <p >20"x20"x15"</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >10</p>		
-				  </td>
-				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
-				  </td>
-				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm ">Add to Basket</a>
-				  
-				  </td>
-                </tr>
-                  <tr>
-                  <td  >4</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
-				  </td>
-                  <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
-                  </td>
-                  <td class="text-center ">
-				     <p >20"x20"x15"</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >10</p>		
-				  </td>
-				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
-				  </td>
-				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm ">Add to Basket</a>
-				  
-				  </td>
-                </tr>
-				
-               <tr>
-                  <td  >5</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
-				  </td>
-                  <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
-                  </td>
-                  <td class="text-center ">
-				     <p >20"x20"x15"</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center ">
-				     <p >10</p>		
-				  </td>
-				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
-				  </td>
-				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm ">Add to Basket</a>
+				   <a href="company_name_order_detailed_view.html" class="btn btn-primary btn-blue btn-sm">View Details</a>
 				  
 				  </td>
                 </tr>
 				 <tr>
-                  <td  >6</td>
+                  <td>PB-134859</td>
                   <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
+				  <p>Organic Food Inc</p>
 				  
-				  </td>
-                  <td  >
-                     <p class="text-strong">Red Organic Tomatoes</p>				 
-                  </td>
-                  <td class="text-center ">
-				     <p >20"x20"x15"</p>		
-				  </td>
+				  </td>    
+					<td class="text-center ">
+				     <p >Nov 24 2017</p>		
+				  </td>				  
 				   <td class="text-center ">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				   <td class="text-center" >
 				     <p >10</p>		
 				  </td>
 				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
+				    <p class="text-orange" >$. 1900</p>		
 				  </td>
 				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm ">Add to Basket</a>
+				   <a href="company_name_order_detailed_view.html" class="btn btn-primary btn-blue btn-sm">View Details</a>
 				  
 				  </td>
                 </tr>
+				<tr>
+                  <td>PB-134859</td>
+                  <td>
+				  <p>Green for Life Inc</p>
+				  
+				  </td>    
+					<td class="text-center ">
+				     <p >Nov 24 2017</p>		
+				  </td>				  
+				   <td class="text-center ">
+				     <p >10</p>		
+				  </td>
+				   <td class="text-left">
+				    <p class="text-orange" >$. 1900</p>		
+				  </td>
+				  <td class="text-center">
+				   <a href="company_name_order_detailed_view.html" class="btn btn-primary btn-blue btn-sm">View Details</a>
+				  
+				  </td>
+                </tr>
+				<tr>
+                  <td>PB-134859</td>
+                  <td>
+				  <p>Whole Grain Food Inc</p>
+				  
+				  </td>    
+					<td class="text-center ">
+				     <p >Nov 24 2017</p>		
+				  </td>				  
+				   <td class="text-center ">
+				     <p >10</p>		
+				  </td>
+				   <td class="text-left">
+				    <p class="text-orange" >$. 1900</p>		
+				  </td>
+				  <td class="text-center">
+				   <a href="company_name_order_detailed_view.html" class="btn btn-primary btn-blue btn-sm">View Details</a>
+				  
+				  </td>
+                </tr>				
+				<tr>
+                  <td>PB-134859</td>
+                  <td>
+				  <p>Pisco Restaurant</p>
+				  
+				  </td>    
+					<td class="text-center ">
+				     <p >Nov 24 2017</p>		
+				  </td>				  
+				   <td class="text-center ">
+				     <p >10</p>		
+				  </td>
+				   <td class="text-left">
+				    <p class="text-orange" >$. 1900</p>		
+				  </td>
+				  <td class="text-center">
+				   <a href="company_name_order_detailed_view.html" class="btn btn-primary btn-blue btn-sm">View Details</a>
+				  
+				  </td>
+                </tr>
+				<tr>
+                  <td>PB-134859</td>
+                  <td>
+				  <p>Fattoria Inc</p>
+				  
+				  </td>    
+					<td class="text-center ">
+				     <p >Nov 24 2017</p>		
+				  </td>				  
+				   <td class="text-center ">
+				     <p >10</p>		
+				  </td>
+				   <td class="text-left">
+				    <p class="text-orange" >$. 1900</p>		
+				  </td>
+				  <td class="text-center">
+				   <a href="company_name_order_detailed_view.html" class="btn btn-primary btn-blue btn-sm">View Details</a>
+				  
+				  </td>
+                </tr>
+
+                 
+                 
 				
               </table>
-			  <table class="table  table-hover table-fixed table-striped mobile">
+			  
+			  <table class="table  table-hover table-fixed table-striped padded-table mobile">
                 <tr>                  
-				  <th>Product Name  <i class="fa fa-angle-down pull-right"></i></th>                  
-				  <th >Price  <i class="fa fa-angle-down pull-right"></i></th>				  
-				  <th>Qty  <i class="fa fa-angle-down pull-right"></i></th>
+				  <th>Company Name <i class="fa fa-angle-down pull-right"></i></th>                
+                  <th>Total Products  <i class="fa fa-angle-down pull-right"></i></th>
+                  <th>Total Amaount  <i class="fa fa-angle-down pull-right"></i></th>		
 				  <th class="gosmall"></th>
                 </tr>
-               <tr>
-                  <td  >1</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
+                <tr>
+                  <td>Organic Food Inc</td>
+                                 
+				   <td class="text-center ">
+				     <p >10</p>		
 				  </td>
-                 
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				  
 				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
+				    <p class="text-blue" >$. 1900</p>		
 				  </td>
 				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm "><i class="fa fa-shopping-cart"></i></a>
+				   <a href="company_name_order_detailed_view.html"  class="btn btn-primary btn-blue btn-sm "><i class="fa fa-newspaper-o"></i></a> 
 				  
 				  </td>
                 </tr>
-				
-               <td  >2</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
+				 <tr>
+                  <td  >Green for Life Inc</td>
+                                
+				   <td class="text-center ">
+				     <p >10</p>		
 				  </td>
-                 
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				  
 				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
+				    <p class="text-blue" >$. 1900</p>		
 				  </td>
 				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm "><i class="fa fa-shopping-cart"></i></a>
+				    <a href="company_name_order_detailed_view.html"  class="btn btn-primary btn-blue btn-sm "><i class="fa fa-newspaper-o"></i></a> 
 				  
 				  </td>
-                </tr>
-				<td  >3</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
+                </tr> <tr>
+                  <td  >Live Green Inc</td>
+                               
+				   <td class="text-center ">
+				     <p >10</p>		
 				  </td>
-                 
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				  
 				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
+				    <p class="text-blue" >$. 1900</p>		
 				  </td>
 				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm "><i class="fa fa-shopping-cart"></i></a>
+				    <a href="company_name_order_detailed_view.html"  class="btn btn-primary btn-blue btn-sm "><i class="fa fa-newspaper-o"></i></a> 
 				  
 				  </td>
-                </tr>
-				<td  >4</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
+                </tr> <tr>
+                  <td  >Whole Grain Food Inc</td>
+             
+				   <td class="text-center ">
+				     <p >10</p>		
 				  </td>
-                 
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				  
 				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
+				    <p class="text-blue" >$. 1900</p>		
 				  </td>
 				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm "><i class="fa fa-shopping-cart"></i></a>
+				    <a href="company_name_order_detailed_view.html"  class="btn btn-primary btn-blue btn-sm "><i class="fa fa-newspaper-o"></i></a> 
 				  
 				  </td>
-                </tr>
-				<td  >5</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
+                </tr> <tr>
+                  <td  >Pisco Restaurant</td>
+                                 
+				   <td class="text-center ">
+				     <p >10</p>		
 				  </td>
-                 
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				  
 				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
+				    <p class="text-blue" >$. 1900</p>		
 				  </td>
 				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm "><i class="fa fa-shopping-cart"></i></a>
+				   <a href="company_name_order_detailed_view.html"  class="btn btn-primary btn-blue btn-sm "><i class="fa fa-newspaper-o"></i></a> 
 				  
 				  </td>
-                </tr>
-				<td  >6</td>
-                  <td>
-				  <p class="text-strong">Red Organic Tomatoes</p>
-				  
+                </tr> <tr>
+                  <td  >Fattoria Inc</td>
+                               
+				   <td class="text-center ">
+				     <p >10</p>		
 				  </td>
-                 
-				   <td class="text-center">
-				     <p >$. 1.90</p>		
-				  </td>
-				  
 				   <td class="text-left">
-				     <input type="text" class="simple-input" placeholder="200"></input>		
+				    <p class="text-blue" >$. 1900</p>		
 				  </td>
 				  <td class="text-center">
-				   <a class="btn btn-primary btn-blue btn-sm "><i class="fa fa-shopping-cart"></i></a>
+				    <a href="company_name_order_detailed_view.html"  class="btn btn-primary btn-blue btn-sm "><i class="fa fa-newspaper-o"></i></a> 
 				  
 				  </td>
                 </tr>
@@ -669,7 +546,7 @@
 	  <ul class="breadcrumb">
 		  <li><a href="#"><i class="fa fa-home"></i></a></li>		  
 		  <li class="text-sm"><a href="dashboard.html">Dashboard</a></li>
-		  <li class="active text-sm">Inventory</li>
+		  <li class="active text-sm">Vendor List</li>
 	 </ul>
 	 </div>
     </section>
@@ -689,24 +566,34 @@
 
 <!-- jQuery 3 -->
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Select2 -->
 <script src="../bower_components/select2/dist/js/select2.full.min.js"></script>
-
-<!-- Chefmode App -->
-<script src="../dist/js/Chefmode.min.js"></script>
-<!-- Chefmode dashboard(This is only forpurposes) -->
-<script src="../dist/js/pages/dashboard.js"></script>
-<!-- Chefmode forpurposes -->
+<!-- InputMask -->
+<script src="../plugins/input-mask/jquery.inputmask.js"></script>
+<script src="../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="../plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- date-range-picker -->
+<script src="../bower_components/moment/min/moment.min.js"></script>
+<script src="../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- bootstrap color picker -->
+<script src="../bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<!-- SlimScroll -->
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="../plugins/iCheck/icheck.min.js"></script>
+<!-- FastClick -->
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- chefmode App -->
+<script src="../dist/js/chefmode.min.js"></script>
+<!-- chefmode for demo purposes -->
 <script src="../dist/js/demo.js"></script>
-
+<!-- Page script -->
 <script>
   $(function () {
     //Initialize Select2 Elements
