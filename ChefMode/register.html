@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chef Mode | Log in</title>
+  <title>Chef Mode | Register</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -23,7 +23,7 @@
 <div class="login-box">
  
   <!-- /.login-logo -->
-  <div class="login-box-body">
+  <div class="register-box-body">
   <div >
  
     
@@ -44,22 +44,44 @@
         <input type="email" class="form-control left-form-control" placeholder="Username / Email">
         
       </div>
+	   <div class="form-group has-feedback">
+	    <span class="glyphicon glyphicon-user left-form-control-feedback"></span>
+        <input type="email" class="form-control left-form-control" placeholder=" Retype Username / Email">
+        
+      </div>
       <div class="form-group has-feedback">
 	    <span class="glyphicon glyphicon-lock left-form-control-feedback"></span>
         <input type="password" class="form-control left-form-control" placeholder="Password">
        
       </div>
-	  
-      <div class="row">
-        <div class="col-xs-1">
-          
+	   <div class="form-group has-feedback">
+	    <span class="glyphicon glyphicon-lock left-form-control-feedback"></span>
+        <input type="password" class="form-control left-form-control" placeholder="Retype Password">
+       
+      </div>
+     <div class="row">
+        <div class="col-xs-12">
+          <div class="checkbox icheck">
+            <label>
+              <input type="checkbox"> I accept the <a href="#">Terms and Conditions</a>
+            </label>
+          </div>
         </div>
         <!-- /.col -->
-        <div class="col-xs-10">
-          <button type="submit" class="btn btn-primary btn-block  login-button">Enter</button>
-		  <p class="forgot-pass"><a href="#">Forgot my password</a></p>
-		  <p class="forgot-pass"><a href="register.html" class="text-center">Register a new user</a></p>
-		  <br/>
+        <div class="col-xs-12 text-center">
+          <button type="submit" class="btn btn-primary btn-lg btn-flat" style="padding: 8px 50px !important">Register</button> 
+		  <hr  style="margin-top: 20px;">
+		  <p>Sing up with your <strong>Facebook</strong> or <strong>Tweeter</strong></p>
+		  <div class="row" style="margin-bottom: 20px;">
+        <div class="col-xs-6 text-left">
+          <button type="submit" class="btn btn-primary btn-block btn-flat" ><i class="fa fa-facebook short-padding"></i>Facebook</button> 
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-6 text-right">
+          <button type="submit" class="btn btn-primary btn-block btn-flat" > <i class="fa fa-twitter short-padding"></i> Twitter</button> 
+        </div>
+        <!-- /.col -->
+      </div>
         </div>
         <!-- /.col -->
       </div>
