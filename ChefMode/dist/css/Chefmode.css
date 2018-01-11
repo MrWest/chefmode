@@ -1028,7 +1028,7 @@ a:focus {
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a,
 .navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a {
   display: block;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   /* Prevent text from breaking */
   border-bottom: 1px solid #f4f4f4;
 }
@@ -2323,9 +2323,11 @@ a:focus {
 .btn.uppercase {
   text-transform: uppercase;
 }
-.uppercase, h6 {
+
+.uppercase {
   font-size: 11px !important;
 }
+
 .btn.btn-flat {
   border-radius: 0;
   -webkit-box-shadow: none;
@@ -5926,7 +5928,7 @@ table.text-center th {
   position: relative;
   margin: 0px 0px 0px 0px;
   font-size: 13px;
-  min-height:474px !important;
+  
 }
 .bigone {
 	width: 40%;
@@ -5978,7 +5980,9 @@ table.text-center th {
 	line-height: 13px;
 }
 .paginationlink {
+	    
 	    padding: 3px 8px !important;
+		/*padding-bottom: 2px!important;*/
 }
 .table {
 	margin-bottom:5px;
@@ -6119,6 +6123,12 @@ table.text-center th {
  .small-padding {
 	 padding: 0px !important;
  }
+ 
+ 
+ .tittle-moblie, td {
+	 width: 14px !important;
+	 padding: 0px !important;
+ }
 }
 
 .select-div {
@@ -6209,8 +6219,8 @@ table.text-center th {
 .btn-search {
 	color: #7f7f7f !important;
 	height: 30px !important;
-	padding-top: 0px !important;
-	padding-bottom: 0px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
 	background: transparent !important;
 	border: 1px solid #d2d6de;
 	margin-top: -3px !important;
@@ -6234,13 +6244,13 @@ table.text-center th {
 	min-height: 26px !important;
 }
 .placeholder-icon{
-	vertical-align: middle !important;
+	
+	width: 24px;
+	height: 18px;
 	color: #7f7f7f !important;
-	font-weight: normal;
-	font-size: 12px !important;
-	position: absolute !important;
+	margin-top: -2px !important;
 	z-index: 810 !important;
-	padding: 8px 5px !important;
+	
 	
 }
 .absolute{
@@ -6373,9 +6383,7 @@ a>.fa-caret-left {
 }
 
  
-.white-zone {
-	min-height:712px !important;
-}
+
 
 }
 
@@ -6446,6 +6454,146 @@ a>.fa-caret-left {
 	 padding-bottom: 30px !important;
 	 padding-top: 30px !important;
  }
+ .padded-table td {
+	 padding-bottom: 8px !important;
+	 padding-top: 10px !important;
+ }
+ .input-group-addon {
+	     padding: 5px 12px !important;
+		 max-height: 24px !important;
+ }
+ 
+ .register-box-body {
+    background: #fff;
+    padding: 5px 20px !important;
+    border-top: 0;
+    color: #666;
+}
+
+
+.white-zone {
+	
+	min-height:474px !important;
+}
+/* Height Media Queryes */
+
+@media (min-height: 768px) {
+
+.white-zone {
+	
+	min-height:474px !important;
+}
+
+}
+
+@media (min-height: 800px) {
+
+.white-zone {
+	
+	min-height:612px !important;
+}
+
+}
+
+@media (min-height: 900px) {
+
+.white-zone {
+	
+	min-height:712px !important;
+}
+
+}
+
+@media (min-height: 1050px) {
+
+.white-zone {
+	
+	min-height:862px !important;
+}
+
+}
+
+@media (min-height: 1080px) {
+
+.white-zone {
+	
+	min-height:892px !important;
+}
+
+}
+
+@media (min-height: 1200px) {
+
+.white-zone {
+	
+	min-height:1012px !important;
+}
+
+}
+@media (min-height: 1440px) {
+
+.white-zone {
+	
+	min-height:1252px !important;
+}
+
+}
+
+.time-table-mini {
+    visibility: collapse;
+  }
+  .time-table {
+    visibility: visible;
+	width: 100%;
+  }
+.sidebar-collapse .time-table {
+    
+	 -webkit-animation: flipInX 0.7s both;
+  -o-animation: flipInX 0.7s both;
+  animation: flipInX 0.7s both;
+  visibility: collapse !important;
+  }
+  .sidebar-collapse .time-table-mini {
+    visibility: visible !important;
+	 -webkit-animation: flipInX 0.9s both;
+  -o-animation: flipInX 1.0s both;
+  animation: flipInX 1.0s both;
+  }
+  
+   .dropdown-toggle  span{
+	  visibility: collapse !important;
+  }
+  .notifications-menu > .dropdown-menu > li .menu > li > a > .fa-close {
+	  width: 10px !important;
+  }
+  
+ .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a {
+   
+   white-space: wrap !important;
+}
+
+.search-control {
+	padding-left: 20px !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #1184c8 !important;
+    border-radius: 0px  !important;
+   
+    /* margin-right: 5px; */
+    margin-top: 2px !important; 
+   
+}
+.select2-selection {
+	border-radius: 0px !important;
+	    height: 28px !important;
+     padding: 3px 8px !important;
+}
+option {
+	padding-left: 20px  !important;
+	padding-top: 4px  !important
+	
+}
 /*.select-div {
 	max-width: 295px;
 }

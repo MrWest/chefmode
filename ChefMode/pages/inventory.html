@@ -189,7 +189,7 @@
           <a href="inventory.html">
             <i class="fa fa-camera"></i>
             <span>Inventory</span>
-             <i class="pull-right fa fa-caret-left"></i>
+             <i class=" fa fa-caret-left"></i>
           </a>
           
         </li>
@@ -227,12 +227,20 @@
 				</td>
 				<td class="clear-fix  select-cell">
 					<!-- Select Restaurant -->
-						<select class="form-control select2 top-select " multiple="" data-placeholder="Select Restaurant"  tabindex="-1" aria-hidden="true">
+					<div>
+						<!-- <p class="text-right" style="line-height: 0px; font-size: 0px; margin: 0px; padding: 0px" ><i class="fa fa-angle-down text-right" style=" z-index: 800 !important; position:absolute; font-size: 14px; margin-left: -14px !important;" ></i></p>	 -->
+						<select class="form-control select2 top-select " >
+						  <option  disabled selected hidden>Select Restaurant</option>
 						  <option>Light Flower</option>
 						  <option>The Tacos's</option>
 						  <option>California Flavor</option>
-						  <option>Richie's</option>                  
-					</select>
+						  <option>Richie's</option>   						  				  
+					    </select>
+						
+						
+					
+						
+					</div>
 				</td>
 		</tr>
 		</table>
@@ -250,14 +258,16 @@
 			<tr >
 				<td class="short-padding sixtypercent" >
 				<div class="search-div">
-					<div class="input-group  ">
-						<i class="fa fa-search pull-left placeholder-icon"></i>
-						<input type="text" class="form-control" placeholder="Search">
-						<div class="input-group-btn">
-						  <button type="button" class="btn btn-flat btn-search"><i class="fa fa-refresh"></i></button>
-						</div>
-						
-					  </div>
+																															
+				<div class="form-group input-group input-group-sm">
+                <i class="fa fa-search left-form-control-feedback placeholder-icon"></i>
+				<input type="text" class="form-control search-control" placeholder="Search">	
+                    <span class="input-group-btn">
+                      <a type="button" class="btn btn-flat btn-search"><i class="fa fa-refresh"></i></a>
+                    </span>
+              </div>
+
+					
 				   </div>
 				</td>
 				<td class="short-padding">
