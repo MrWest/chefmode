@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8093b78-76c3-4157-a160-96ed9a5acd48" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/dist/css/Chefmode.css" afterPath="$PROJECT_DIR$/ChefMode/dist/css/Chefmode.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/catalog.html" afterPath="$PROJECT_DIR$/ChefMode/pages/catalog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/company_name_order_detailed_view.html" afterPath="$PROJECT_DIR$/ChefMode/pages/company_name_order_detailed_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/current_inventory.html" afterPath="$PROJECT_DIR$/ChefMode/pages/current_inventory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/dashboard.html" afterPath="$PROJECT_DIR$/ChefMode/pages/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/inventory.html" afterPath="$PROJECT_DIR$/ChefMode/pages/inventory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/order_request.html" afterPath="$PROJECT_DIR$/ChefMode/pages/order_request.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/product_catalog.html" afterPath="$PROJECT_DIR$/ChefMode/pages/product_catalog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/product_catalog_2.html" afterPath="$PROJECT_DIR$/ChefMode/pages/product_catalog_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/purchase_order_detailed_view.html" afterPath="$PROJECT_DIR$/ChefMode/pages/purchase_order_detailed_view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/report.html" afterPath="$PROJECT_DIR$/ChefMode/pages/report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/vendor_list.html" afterPath="$PROJECT_DIR$/ChefMode/pages/vendor_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChefMode/pages/your_basket.html" afterPath="$PROJECT_DIR$/ChefMode/pages/your_basket.html" />
     </list>
     <ignored path="chef.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vendor_list.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vendor_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChefMode/pages/vendor_list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
               <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ChefMode/pages/report.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -84,6 +81,7 @@
       <list>
         <option value="$PROJECT_DIR$/ChefMode/pages/dashboard.html" />
         <option value="$PROJECT_DIR$/ChefMode/pages/vendor_list.html" />
+        <option value="$PROJECT_DIR$/ChefMode/pages/report.html" />
       </list>
     </option>
   </component>
@@ -206,12 +204,12 @@
       <option name="presentableId" value="Default" />
       <updated>1515459300102</updated>
       <workItem from="1515459301333" duration="1900000" />
-      <workItem from="1516070769609" duration="302000" />
+      <workItem from="1516070769609" duration="441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2202000" />
+    <option name="totallyTimeSpent" value="2341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
@@ -296,6 +294,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChefMode/pages/report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
           <folding />
         </state>
       </provider>
